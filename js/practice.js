@@ -50,3 +50,14 @@ document.getElementById('btn-triple').addEventListener('click', function () {
 
     inputField.value = '';
 })
+
+// Event on Changing Heading
+
+document.getElementById('btn-change-heading').addEventListener('click', function () {
+    //console.log('This is clicked for changing heading');
+
+    const existingHeading = document.getElementById('changed-heading');
+    const changeHeading = existingHeading.innerText;
+
+    existingHeading.innerText = 'Changed Heading';
+})
